@@ -1,26 +1,37 @@
 ---
-import { getCurrentTimeInItaly, formatTimeForItaly } from "../lib/helpers";
 import Card from "./Card/index.astro";
 ---
 
-<script>
-  import { formatTimeForItaly } from "../lib/helpers";
-
-  function updateClock() {
-    const timeDisplay = document.getElementById("timeDisplay");
-    if (timeDisplay) {
-      timeDisplay.textContent = formatTimeForItaly(new Date());
-    }
-  }
-
-  setInterval(updateClock, 1000);
-</script>
-
-<Card colSpan="lg:col-span-2" rowSpan="md:row-span-1" title="Time zone">
-  <h4
-    id="timeDisplay"
-    class="text-5xl w-full h-[calc(100%-28px)] font-serif flex justify-center items-center"
-  >
-    {formatTimeForItaly(getCurrentTimeInItaly())}
-  </h4>
+<Card colSpan="lg:col-span-2" rowSpan="md:row-span-1" title="Projects">
+  <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+  <ul class="list-disc list-inside">
+    <li class="link text-sm">
+      <a
+        class="hover:text-green-500"
+        href="https://github.com/sebcriado/canIGetSomeBurger"
+        target="_blank"
+        ><strong>Can i get some burger</strong> (A restaurant burger website with
+        a user and administrator interface)</a
+      >
+    </li>
+    <li class="link text-sm">
+      <a
+        class="hover:text-green-500"
+        href="https://github.com/m19m99/Expedition-Med"
+        target="_blank"
+      >
+        <strong>Expedition Med</strong> (An application to be able to map plastic
+        waste collected at sea)
+      </a>
+      <li class="link text-sm">
+        <a
+          class="hover:text-green-500"
+          href="https://github.com/sebcriado/La-boutique-francaise"
+          target="_blank"
+          ><strong>La boutique française</strong> (E-shop with french products. There
+          is an admin interface for adding products and categories)</a
+        >
+      </li>
+    </li>
+  </ul>
 </Card>
