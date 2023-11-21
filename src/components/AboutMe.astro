@@ -3,16 +3,14 @@ import Icon from "astro-icon";
 import Card from "./Card/index.astro";
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-3" title="About me">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-4" title="About me">
   <div class="flex flex-col gap-2">
     <p class="text-sm font-light">
-      My main tools are:
-      <ul class="list-disc list-inside">
-        <li role="link">Symfony</li>
-        <li role="link">React</li>
-        <li role="link">MySQL</li>
-        <li role="link">Docker</li>
-      </ul>
+      My main tools are: <br>
+      <h3>Symfony</h3>
+      <h3>React</h3>
+      <h3>MySQL</h3>
+      <h3>Docker</h3>
     </p>
     <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
     <p class="font-light">
@@ -22,5 +20,11 @@ import Card from "./Card/index.astro";
       Even if I have some favorite tools, I can adapt to company technologies and I am
       open to learning new things.
     </p>
+    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+    <h1>Soft Skills</h1>
+    <h3>Communication</h3>
+    <h3>Team work</h3>
+    <h3>Curiosity</h3>
+    <h3>Creativity</h3>
   </div>
 </Card>
